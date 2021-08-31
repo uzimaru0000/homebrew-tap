@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v2
       - name: setup Node
         uses: actions/setup-node@v1
-      - Update formula
+      - name: Update formula
         run: |
           ./scripts/update.js ${{ github.event.client_payload.formula }} ${{ github.event.client_payload.description }} ${{ github.event.client_payload.url }} ${{ github.event.client_payload.sha256 }} ${{ github.event.client_payload.version }}
       - name: Create Pull Request
@@ -51,7 +51,7 @@ jobs:
           body: |
             @${{ github.actor }}
             ```
-	          ${{ github.event.client_payload.formula }} update for ${{ github.event.client_payload.version }}
+            ${{ github.event.client_payload.formula }} update for ${{ github.event.client_payload.version }}
             ```
       - name: Check Pull Request
         run: |
