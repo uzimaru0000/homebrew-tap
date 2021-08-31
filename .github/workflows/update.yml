@@ -34,7 +34,12 @@ jobs:
         uses: actions/setup-node@v1
       - name: Update formula
         run: |
-          ./scripts/update.js ${{ github.event.client_payload.formula }} ${{ github.event.client_payload.description }} ${{ github.event.client_payload.url }} ${{ github.event.client_payload.sha256 }} ${{ github.event.client_payload.version }}
+          ./scripts/update.js\
+            "${{ github.event.client_payload.formula }}"\
+            "${{ github.event.client_payload.description }}"\
+            "${{ github.event.client_payload.url }}"\
+            "${{ github.event.client_payload.sha256 }}"\
+            "${{ github.event.client_payload.version }}"
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v3
