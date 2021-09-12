@@ -1,9 +1,9 @@
 class Tv < Formula
-  desc "Format json and csv into table view"
+  desc "Format json into table view"
   homepage "https://github.com/uzimaru0000/tv"
-  url "https://github.com/uzimaru0000/tv/releases/download/v0.2.0/tv-x86_64-apple-darwin.zip"
-  sha256 "94e80e64a07e3071bb119c77b13fccb776fd9d27819a8ba7dabdc54f3289ab87"
-  version "0.2.0"
+  url "https://github.com/uzimaru0000/tv/releases/download/v0.5.1/tv-x86_64-apple-darwin.zip"
+  sha256 "2ccced04c5c38da679f1d62502a60d5a6b077a3ef5e3c01e3c18b912cdfcc8d1"
+  version "v0.5.1"
 
   def install
     bin.install "tv"
