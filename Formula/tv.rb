@@ -7,8 +7,8 @@ class Tv < Formula
 
   def install
     bin.install "tv"
-    zsh_completion.install  "completions/zsh/_tv"
-    bash_completion.install "completions/bash/tv.bash"
-    fish_completion.install "completions/fish/tv.fish"
+    zsh_completion.install  "_tv"
+    bash_completion.install "tv.bash"
+    fish_completion.install "tv.fish"
   end
 end
