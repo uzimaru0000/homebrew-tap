@@ -7,8 +7,5 @@ class Oglens < Formula
 
   def install
     bin.install "og"
-    zsh_completion.install  "completions/zsh/_og"
-    bash_completion.install "completions/bash/og.bash"
-    fish_completion.install "completions/fish/og.fish"
   end
 end
