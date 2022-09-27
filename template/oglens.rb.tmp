@@ -1,0 +1,14 @@
+class Oglens < Formula
+  desc {{description}}
+  homepage "https://github.com/uzimaru0000/oglens"
+  url {{ url }}
+  sha256 {{ sha256 }}
+  version {{ version }}
+
+  def install
+    bin.install "og"
+    zsh_completion.install  "completions/zsh/_og"
+    bash_completion.install "completions/bash/og.bash"
+    fish_completion.install "completions/fish/og.fish"
+  end
+end
