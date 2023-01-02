@@ -1,0 +1,35 @@
+class Sudare < Formula
+  desc "Manage Procfile-based applications with terminal multiplexer."
+  homepage "https://github.com/atty303/sudare"
+  version "0.1.0"
+
+  on_macos do
+    if Hardware::CPU.arm?
+      url ""
+      sha256 ""
+
+      def install
+        bin.install "sudare"
+      end
+    end
+    if Hardware::CPU.intel?
+      url ""
+      sha256 ""
+
+      def install
+        bin.install "sudare"
+      end
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url ""
+      sha256 ""
+
+      def install
+        bin.install "sudare"
+      end
+    end
+  end
+end
