@@ -1,9 +1,9 @@
 class Oreq < Formula
   desc "The tool for interactively creating curl arguments from OpenAPI."
   homepage "https://github.com/uzimaru0000/oreq"
-  url "https://github.com/uzimaru0000/oreq/releases/download/v0.1.4/oreq-x86_64-apple-darwin.zip"
-  sha256 "4963d13af26d500f7779be82f722d5f71038782713d03f711c8cb043ea82e8f8"
-  version "v0.1.4"
+  url "https://github.com/uzimaru0000/oreq/releases/download/v0.1.5/oreq-x86_64-apple-darwin.zip"
+  sha256 "c4ca8a7e16952aaae3d46a206e5474afe921d02d966dffb84ecb20b77f00131b"
+  version "v0.1.5"
 
   def install
     bin.install "oreq"
